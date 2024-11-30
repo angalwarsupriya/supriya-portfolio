@@ -1,5 +1,5 @@
 import './index.css'
-import MobileNav from '../MobileNav'
+//import MobileNav from '../MobileNav'
 import { LuMenu } from "react-icons/lu";
 import { MdOutlineHighlightOff } from "react-icons/md";
 import { useState } from 'react'
@@ -53,12 +53,12 @@ function Navbar() {
                 <LuMenu style={{fontSize:'20px'}}/>
             </button>}
 
-       
+      
+
        </div>
     </div>
   )
 }
 
 export default Navbar
-/*
- //  <MobileNav menuStatus={menuStatus} changeActiveLinkStatus={changeActiveLink} activeLinkStatus={activeLinkStatus}/>*/
+/*      <MobileNav menuStatus={menuStatus} changeActiveLinkStatus={changeActiveLink} activeLinkStatus={activeLinkStatus}/>*/
