@@ -2,7 +2,7 @@ import './index.css'
 function Home() {
 
   const onclickResume = ()=>{
-    window.open('https://docs.google.com/document/d/1shhpZFzQqZZIM6SFqspIOOw2Ys4i_OIPzyBmVqlJkP8/edit?tab=t.0')
+    window.open('https://docs.google.com/document/d/1shhpZFzQqZZIM6SFqspIOOw2Ys4i_OIPzyBmVqlJkP8/edit?tab=t.0','_blank')
   }
   return (
     <section id='hero-section' className='hero-bg-con'>

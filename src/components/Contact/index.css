@@ -1,0 +1,446 @@
+#sendButton {
+    position: relative;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .icon-plane {
+    position: absolute;
+    font-size: 20PX;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 1s ease-in-out;
+  }
+  
+  @keyframes movePlane {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: calc(100% + 30px);
+    }
+  }
+  
+  #sendButton:focus .icon-plane {
+    animation: movePlane 3s forwards;
+  }
+  
+  #sendButton:focus .button-text::after {
+    content: 'Done';
+    animation: changeText 3s forwards;
+  }
+  
+  @keyframes changeText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .button-text {
+    display: inline-block;
+  }
+  
+/***/
+
+
+
+.foooter-con{
+    height:90vh;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.contact-me-h{
+    font-size: 30px;
+}
+.contact-overview-con{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.contact-details-con{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-details-con{
+    height: 100%;
+    width: 60%;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.contact-icons{
+    font-size: 35px;
+}
+.contact-value{
+    font-size: 17px;
+    margin-left: 10px;
+    color: aliceblue;
+}
+.form-con{
+    height: 100%;
+    width: 100%;
+}
+.nameinput{
+    height: 50px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: rgb(68, 64, 64);
+    border: 1px solid rgb(210, 210, 210);
+    font-size: 19px;
+    color: rgb(160, 165, 170);
+    font-weight: normal;
+    padding: 4px;
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.email-input{
+    height: 50px;
+    width: 98%;
+    border-radius: 10px;
+    background-color: rgb(68, 64, 64);
+    border: 1px solid rgb(210, 210, 210);
+    font-size: 19px;
+    color: rgb(160, 165, 170);
+    font-weight: normal;
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+textarea{
+    border-radius: 10px;
+    background-color: rgb(68, 64, 64);
+    border: 1px solid rgb(210, 210, 210);
+    font-size: 17px;
+    color: rgb(160, 165, 170);
+    font-weight: normal;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.input-con{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.name-input-con{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+label{
+    font-size: 20px;
+}
+.names-input-row{
+    display: flex;
+    width: 100%;
+}
+.send-btn{
+    padding: 10px;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    background-image:linear-gradient(to right, #0044ff , rgb(7, 240, 240));
+    border:none;
+    color: white;
+}
+/*----------Icons-color-------------*/
+.linkdin-icon{
+color: rgb(17, 92, 212);
+background-color: aliceblue;
+
+}
+.twitter-icon{
+    color: rgb(90, 202, 246);
+}
+.phone-icon{
+color: rgb(0, 255, 94);
+}
+.location-icon{
+color: rgb(238, 6, 6);
+}
+/*-------------------------*/
+
+@media screen and (max-width:300px){
+    .contact-me-h{
+        font-size: 17px;
+    }
+    .contact-value{
+        font-size: 7px;
+        margin-left: 0px;
+        
+    }
+    .nameinput{
+        height: 35px;
+        width: 40vw;
+        margin-top: 0pxx;
+        margin-bottom: 0px;
+        font-size: 10px;
+
+    }
+    .email-input{
+        height:35px;
+        width: 90%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 12px;
+        outline: none;
+    }
+    textarea{
+        width: 95%;
+        height: 60px;
+        font-size: 12px;
+        outline: none;
+    }
+    label{
+        font-size: 10px;
+    }
+    .contact-icons{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width:300px) and (max-width:576px){
+    
+    .row{
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+    .contact-me-h{
+        font-size: 20px;
+    }
+    .contact-icons{
+        font-size: 20px;
+    }
+    .contact-value{
+        font-size:7px;
+        margin-left: 0px;
+        flex-wrap: wrap;
+    }
+
+    .nameinput{
+        height: 35px;
+        margin-top: 0pxx;
+        margin-bottom: 0px;
+        font-size: 12px;
+        outline: none;
+    }
+    .email-input{
+        height:35px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 12px;
+        outline: none;
+    }
+    textarea{
+        height: 60px;
+        font-size: 14px;
+        outline: none;
+    }
+    label{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .send-btn{
+        height: 35px;
+        width: 85px;
+        padding: 0px;
+        font-size: 13px;
+        margin: 0px;
+      
+    }
+    .button-text{
+        font-size: 10px;
+    }
+    .row{
+        margin-top: 3px;
+        margin-bottom: 4px;
+    }
+   
+ }
+
+ @media screen and (min-width:300px) and (max-width:400px){
+   
+    .contact-value{
+        font-size: 10px;
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+    .email-input{
+        width: 90%;
+    }
+    .name-input-con{
+        width: 44%;
+    }
+    label{
+        font-size: 10px;
+    }
+    textarea{
+        width: 90%;
+    }
+   
+ }
+
+ @media screen and (max-width:576px){
+    .row{
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+ }
+
+ @media screen and (min-width:576px) and (max-width:767px){
+    .contact-me-h{
+        font-size: 24px;
+    }
+    .contact-icons{
+        font-size: 25px;
+    }
+    .contact-value{
+        font-size: 15px;
+    }
+
+    .nameinput{
+        height: 36px;
+        margin-top: 0pxx;
+        margin-bottom: 0px;
+        font-size: 12px;
+        outline: none;
+    }
+    .email-input{
+        height:36px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 12px;
+        outline: none;
+    }
+    textarea{
+        height: 60px;
+        font-size: 12px;
+        outline: none;
+    }
+    label{
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .send-btn{
+        height: 35px;
+        width: 85px;
+        padding: 0px;
+        font-size: 13px;
+        margin: 0px;
+    }
+    .row{
+        margin-bottom: 4px;
+        margin-top: 5px;
+    }
+ }
+
+ @media screen and (min-width:768px) and (max-width:991px){
+    .contact-me-h{
+        font-size: 24px;
+    }
+    .contact-icons{
+        font-size: 30px;
+    }
+    .contact-value{
+        font-size: 14px;
+    }
+
+    .nameinput{
+        height: 56px;
+        margin-top: 3px;
+        margin-bottom:10px;
+        font-size: 12px;
+        outline: none;
+    }
+    .email-input{
+        height:56px;
+        margin-bottom: 10px;
+        margin-top: 3px;
+        font-size: 12px;
+        outline: none;
+    }
+    textarea{
+        font-size: 12px;
+        outline: none;
+    }
+    label{
+        font-size: 19px;
+        margin-left: 5px;
+
+    }
+    .send-btn{
+        height: 38px;
+        width: 95px;
+        padding: 0px;
+        font-size: 17px;
+        margin: 0px;
+    }
+    .row{
+        margin-bottom: 20px;
+    }
+    .contact-value{
+        font-size: 10px;
+    }
+ 
+ }
+ @media screen and (min-width:992px) and (max-width:1200px){
+    .row{
+        margin-bottom: 20px;
+    }
+    .contact-icons{
+        margin-right: 10px;
+    }
+    .contact-value{
+        font-size: 14px;
+    }
+ 
+ }
+ @media screen and (min-width:1201px){
+    .row{
+        margin-bottom: 10px;
+    }
+    .contact-value{
+        font-size: 15px;
+    }
+ }
+ 
+ @media screen and (max-width:767px){
+    .contact-overview-con{
+        flex-direction: column;
+    }
+    .contact-details-con{
+       height: 50%;
+       width: 100%;
+       order: 2;
+       padding: 0px;
+    }
+    .form-details-con{
+       height: 50%;
+       width: 100%;
+       order: 1;
+    }
+    textarea{
+        margin-bottom: 0px;
+    }
+ }
