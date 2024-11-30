@@ -7,11 +7,11 @@
 
 
 .projects-hea{
-    font-size: 30px;
+    font-size: 25px;
 }
 .displaying-projects-con{
     width: 100%;
-    height: 78%;
+    height: 74%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

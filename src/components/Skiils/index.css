@@ -20,19 +20,19 @@
     display: flex;
 }
 .tech-pro-hea{
-    font-size: 27px;
+    font-size: 25px;
     margin-bottom: 50px;
 
 }
 .skills-details-box-con{
-    height: 60%;
+    height: 55%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .skills-details-percent-con{
-    height: 90%;
+    height: 80%;
     width: 50%;
 }
 .skills-details-percent-con{
@@ -89,7 +89,7 @@
         height: 100vh;
     }
     .tech-pro-hea{
-        font-size: 17px;
+        font-size: 14px;
         margin-bottom: 20px;
     }
     .skills-showcase-con{
@@ -101,18 +101,18 @@
         height: 39%;
         order: 3;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     
     .skills-details-percent-con{
-        height: 50%;
+        height:48%;
         width: 95%;
     }
     .progress-cell{
          height: 20%;
     }
     .skill-name{
-        font-size: 12px;
+        font-size: 11px;
         margin-bottom: 0px;
     }
     .activeSkillHea{
