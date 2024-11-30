@@ -1,0 +1,214 @@
+.skills-title-con{
+    height: 36%;
+    width: 42%;
+    border:2px solid rgb(7, 221, 240) ;
+    border-radius: 20px;  
+    margin-bottom: 0px;
+    margin: 20px;
+    display: flex;  
+    transition: background-color 2s ease;
+}
+    /*-----------------------------------*/
+    
+
+    
+    /*-------------------------------------*/
+    
+.spanw{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    font-size: 25px;
+}
+.skill-logo-con{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border:2px solid rgb(68, 93, 152);
+    background-color: rgb(16, 18, 54);
+    position: relative;
+    z-index: 1;
+    bottom: 15%;
+    right: 8%;
+    border-radius: 10px;
+}
+.skills-title-con:hover{
+   .skill-logo-con{
+      height: 60px;
+      width: 60px;
+      box-sizing: content-box
+   
+   }
+   background-color: rgb(129, 162, 240);
+}
+.skill-type-logo{
+    width: 70%;
+    height: 70%;
+}
+
+@media screen and (max-width:200px){
+   .skills-title-con{
+      height:80px;
+      width: 60px;
+      margin: 5px;
+      margin: 0px;
+      margin-right: 6px;
+   }
+.spanw{
+   font-size: 5px;
+   left:0px;
+}
+.skill-logo-con{
+   width: 30px;
+   height: 30px;
+}
+
+.skills-title-con:hover{
+   .skill-logo-con{
+      height: 40px;
+      width: 40px;
+   }}
+}
+@media screen and (min-width:200px) and (max-width:300px){
+   .skills-title-con{
+      height:40%;
+      width: 46%;
+      margin: 5px;
+      margin: 0px;
+    margin-right: 6px;
+   }
+.spanw{
+   font-size: 10px;
+   left:0px;
+}
+.skill-logo-con{
+   width: 40px;
+   height: 40px;
+}
+
+.skills-title-con:hover{
+   .skill-logo-con{
+      height: 50px;
+      width: 50px;
+   }}
+}
+@media screen and (min-width:300px) and (max-width:400px){
+   .skills-title-con{
+      height:70px;
+      margin: 2px;
+      border-radius: 10px;
+      margin-left: 20px;
+   }
+   .skill-logo-con{
+      width: 40px;
+      height: 40px;
+   }
+   .spanw{
+      left:0%;
+      font-size: 13px;
+   }
+   .skills-title-con:hover{
+      .skill-logo-con{
+         height: 50px;
+         width: 50px;
+      }}
+}
+
+
+@media screen and (min-width:401px) and (max-width:575px){
+   .skills-title-con{
+      height:80px;
+      margin: 10px;
+      width: 40%;
+      border-radius: 10px;
+      margin-left: 20px;
+   }
+   .skill-logo-con{
+      height: 40px;
+      width: 45px;
+      bottom: 13%;
+      right: 10%;
+      border-radius: 7px;
+   }
+   .spanw{
+    font-size: 15px;
+   }
+
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    .skills-title-con{
+        height:90px;
+        margin: 10px;
+        width: 30%;
+        border-radius: 10px;
+        margin-left: 20px;
+     }
+     .skill-logo-con{
+        height: 40px;
+        width: 45px;
+        bottom: 13%;
+        right: 10%;
+        border-radius: 7px;
+     }
+     .spanw{
+      font-size: 15px;
+     }
+
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .skills-title-con{
+        height:50%;
+        width:42%;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 10px;
+        margin-bottom: 15px;
+
+     }
+     .skill-logo-con{
+        height: 35px;
+        width: 35px;
+        bottom: 13%;
+        right: 10%;
+        border-radius: 7px;
+     }
+     .spanw{
+        font-size: 15px;
+        top: 40%;
+        left: 8px;
+     }
+  
+  
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+   .skills-title-con{
+      height:60%;
+      width:42%;
+      border-radius: 10px;
+      padding: 0px;
+      margin: 10px;
+      margin-bottom: 0px;
+      margin-bottom: 20px;
+   }
+   .skill-logo-con{
+      height: 50px;
+      width:50px;
+      bottom: 13%;
+      right: 10%;
+      border-radius: 7px;
+      margin: 10px;
+   }
+   .spanw{
+      font-size: 20px;
+      top: 37%;
+      left: 0px;
+   }
+
+
+}

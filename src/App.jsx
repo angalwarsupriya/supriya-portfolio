@@ -1,6 +1,6 @@
 import './App.css'
 import Home from './components/Home'
-
+import Skills from './components/Skiils'
 import Navbar from './components/Navbar'
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <div className='container'>
         <Navbar/>
         <Home/>
+        <Skills/>
       </div>
       </>
 

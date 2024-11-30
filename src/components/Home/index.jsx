@@ -18,7 +18,7 @@ function Home() {
           <div className='tec-round-con'>
             <img className='technology-img' alt='react' src='https://res.cloudinary.com/dfb0groak/image/upload/v1732532409/react_ubvkrf.svg'/>
           </div>
-          <img className='hero-img' alt='profile-img' src=''/>
+          <img className='hero-img' alt='profile-img' src='./images/sweety (3).jpg'/>
         </div>
         
         <div className='tech-logoes-con'>
