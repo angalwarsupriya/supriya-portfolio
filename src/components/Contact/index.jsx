@@ -68,7 +68,7 @@ function Contact() {
               </div>
               <div className='input-con'>
                 <label htmlFor='message'>Message</label>
-                <textarea id='message'  placeholder='message that you want to send' cols={76} rows={10} />
+                <textarea id='message'  placeholder='message that you want to send' cols={65} rows={10} />
               </div>
               <button type='button' className='send-btn' id="sendButton">
               <span  className="button-text">Send</span>

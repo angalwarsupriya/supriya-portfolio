@@ -1,7 +1,7 @@
 #sendButton {
     position: relative;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 13px;
+    padding: 5px ;
     cursor: pointer;
     background-color: #007bff;
     color: white;
@@ -52,8 +52,7 @@
   
 /***/
 
-
-
+    
 .foooter-con{
     height:90vh;
     width: 100%;
@@ -61,7 +60,7 @@
     padding-right: 6%;
 }
 .contact-me-h{
-    font-size: 30px;
+    font-size: 25px;
 }
 .contact-overview-con{
     height: 90%;
@@ -96,8 +95,8 @@
     width: 100%;
 }
 .nameinput{
-    height: 50px;
-    width: 95%;
+    height: 45px;
+    width: 93%;
     border-radius: 10px;
     background-color: rgb(68, 64, 64);
     border: 1px solid rgb(210, 210, 210);
@@ -110,8 +109,8 @@
     margin-bottom: 15px;
 }
 .email-input{
-    height: 50px;
-    width: 98%;
+    height: 45px;
+    width: 95%;
     border-radius: 10px;
     background-color: rgb(68, 64, 64);
     border: 1px solid rgb(210, 210, 210);
@@ -132,21 +131,22 @@ textarea{
     font-weight: normal;
     padding: 10px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .input-con{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 .name-input-con{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 label{
     font-size: 20px;
+   
 }
 .names-input-row{
     display: flex;
@@ -155,12 +155,19 @@ label{
 .send-btn{
     padding: 10px;
     font-size: 20px;
-    width: 120px;
-    height: 50px;
+    width: 100px;
+    height: 35px;
     border-radius: 6px;
     background-image:linear-gradient(to right, #0044ff , rgb(7, 240, 240));
     border:none;
     color: white;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+.contact-value{
+    font-size: 15px;
 }
 /*----------Icons-color-------------*/
 .linkdin-icon{
@@ -300,13 +307,29 @@ color: rgb(238, 6, 6);
    
  }
 
- @media screen and (max-width:576px){
+ @media screen and (min-width:401px) and (max-width:575px){
     .row{
         flex-direction: column;
         justify-content:flex-start;
         align-items: flex-start;
+        margin-bottom: 5px;
+    }
+    .contact-details-con{
+        height: 50%;
+  
+    }
+    .form-details-con{
+        height: 50%;
+    }
+    .contact-icons{
+        font-size: 20px;
+    }
+    .contact-value{
+        font-size: 13px;
+    
     }
  }
+
 
  @media screen and (min-width:576px) and (max-width:767px){
     .contact-me-h{
@@ -348,10 +371,23 @@ color: rgb(238, 6, 6);
         padding: 0px;
         font-size: 13px;
         margin: 0px;
+       
     }
     .row{
         margin-bottom: 4px;
         margin-top: 5px;
+    }
+    .contact-me-h{
+        font-size: 23px;
+    }
+    textarea{
+           height: 100px;
+    }
+    .contact-icons{
+        font-size: 20px;
+    }
+    .contact-value{
+        font-size: 12px;
     }
  }
 
@@ -414,29 +450,37 @@ color: rgb(238, 6, 6);
     .contact-value{
         font-size: 14px;
     }
- 
- }
- @media screen and (min-width:1201px){
-    .row{
-        margin-bottom: 10px;
+    .contact-me-h{
+        font-size: 22;
     }
-    .contact-value{
+    .email-input{
+        height: 35px;
+        font-size: 13px;
+    }
+    .nameinput{
+        height: 35px;
+        font-size: 13px;
+    }
+    label{
         font-size: 15px;
     }
+ 
  }
+
  
  @media screen and (max-width:767px){
     .contact-overview-con{
         flex-direction: column;
+      
     }
     .contact-details-con{
-       height: 50%;
+       height: 40%;
        width: 100%;
        order: 2;
        padding: 0px;
     }
     .form-details-con{
-       height: 50%;
+       height: 60%;
        width: 100%;
        order: 1;
     }
