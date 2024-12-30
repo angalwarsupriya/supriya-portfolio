@@ -1,7 +1,72 @@
+/**************************/
 
 
+.nav-wrapper{
+    background-color:rgb(11, 26, 54);
+    height: 10vh;
+    width: 100vw;
+    padding-left: 6%;
+    padding-right: 6%;
+    position: fixed;
+    z-index: 3;
+}
+
+.nav-container{
+    max-width: 1300px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    width: 3rem;
+    height: auto;
+    font-size: 30px;
+    font-family: Papyrus, fantasy; 
+}
+
+.nav-container{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+
+}
 
 
+/* ------- menu item animation css ------- */
+.menu-item{
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 1.5rem;
+}
+.menu-item::before{
+    content: " ";
+    width:2rem ;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    background:linear-gradient(90deg,#0044ff 0%, rgb(7, 240, 240) 100%);
+    position: absolute;
+    bottom: -1rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* --------- glowing logo animation ---------- */
 
 .glow {
     font-size: 85px;
@@ -21,7 +86,8 @@
     }
   }
 
-/* --------- GLOWING BUTTON CSS ------------ */
+
+/* --------- glowing hire me button animation css ------------ */
 
 .glow-on-hover {
     width: 90px;
@@ -84,95 +150,7 @@
     100% { background-position: 0 0; }
 }
 
-/* ----------------------------- */
-
-.nav-wrapper{
-    background-color:rgb(11, 26, 54);
-    height: 10vh;
-    width: 100vw;
-    padding-left: 6%;
-    padding-right: 6%;
-    position: fixed;
-    z-index: 3;
-}
-
-.nav-container{
-    max-width: 1300px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-.logo{
-    width: 3rem;
-    height: auto;
-}
-
-.nav-container{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap:0.5rem;
-
-}
-.menu-item{
-    margin: 0 1.5rem;
-}
-
-.menu-item{
-    color: #fff;
-    font-size: 1.05rem;
-    font-weight: 500;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-}
-.logo{
-    font-size: 30px;
-    font-family: Papyrus, fantasy; 
-}
-
-.menu-item::before{
-    content: " ";
-    width:2rem ;
-    height: 0.2rem;
-    border-radius: 0.5rem;
-    background:linear-gradient(90deg,#0044ff 0%, rgb(7, 240, 240) 100%);
-    position: absolute;
-    bottom: -1rem;
-    opacity: 0;
-    transform: translateX(-1.5rem);
-    transition: all 0.3s ease;
-}
-
-.menu-item:hover::before{
-    width: 100%;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.glow-on-hover{
-    font-size: 0.9rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    padding: 8px;
-    width: 100px;
-    border: none;
-    outline: 1.5 solid transparent;
-    background-image:linear-gradient(to right, #0044ff , rgb(7, 240, 240));
-    transition: all 0.3s ease;
-    color: #fff;
-    cursor: pointer;
-}
-.glow-on-hover:hover{
-  height: 50px;
-  width: 120px;
-}
+/* -------- nav menu btn for small devices------- */
 
 .nav-menu-btn{
     padding: 6px;
@@ -189,6 +167,10 @@
     border: none;
 }
 
+
+
+
+/* -------- start media queries from here ------- */
 
 @media screen and (max-width:200px){
   .nav-menu-btn{
@@ -216,3 +198,4 @@
     font-size: 23px;
    }
 }
+

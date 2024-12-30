@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { PiPaperPlaneRightFill } from "react-icons/pi";
@@ -19,9 +18,7 @@ const contactDetails = [
 ]
 
 function Contact() {
-  AOS.init({
-    offset:250,
-  });
+  AOS.init();
  
   return (
     <section id='contact-section' className='foooter-con'>

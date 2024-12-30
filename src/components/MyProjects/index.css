@@ -4,15 +4,19 @@
     padding-left: 6%;
     padding-right: 6%;
     box-sizing: border-box;
+    padding-top: 5%;
 }
 
-
+.my-projects-hea{
+    margin-bottom: 30px;
+}
 
 .pagination-con{
     height: 10vh;
     width: 100%;
     display: flex;
     justify-content: end;
+    
 }
 
 .paginations-btn-con{
@@ -21,6 +25,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 50px;
 }
 
 .less-btn{
@@ -34,6 +39,7 @@
     justify-content: space-between;
     cursor: pointer;
 }
+
 .greate-btn{
     height: 40px;
     width: 40px;
@@ -54,4 +60,24 @@
 .project-img{
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .pagination-con{
+        justify-content: center;
+        height: 5vh;
+    }
+    .paginations-btn-con{
+        width: 20%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:400px){
+    .pagination-con{
+        justify-content: center;
+        height: 5vh;
+    }
+    .paginations-btn-con{
+        width: 30%;
+    }
 }

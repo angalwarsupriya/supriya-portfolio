@@ -1,53 +1,185 @@
 
+  /**************/
+.hero-bg-con{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 6%;
+    padding-right: 6%;
+}
 
 
-@keyframes clippath {
-  0%,
-  100% {
-      clip-path: inset(0 0 98% 0);
+.hero-content-section{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.hero-img-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img-con{
+    width:70%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
   }
   
-  25% {
-      clip-path: inset(0 98% 0 0);
-  }
-  50% {
-      clip-path: inset(98% 0 0 0);
-  }
-  75% {
-      clip-path: inset(0 0 0 98%);
-  }
+.hero-img{
+    border-radius: 50%;
+    height:300px;
+    width: 300px;
 }
 
-.bg::before {
-  background: rgba(255, 215, 0, .5);
+.name-span{
+    font-size: 46px;
+    color: #fffffff0;
 }
 
+.hero-p{
+    font-size:16px;
+    line-height: 30px;
+    color: #e6e5e5;
+    width: 70%;
+    letter-spacing: 2px;
+}
 
-
-/****/
-
-/****/
 
 
 .h1 {
-  font-size: 40px;
-  color: rgb(189, 212, 239);
-  text-align: left;
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  margin: 0px;
-  line-height: 50px;
-  letter-spacing: 1.5px;
+    font-size: 40px;
+    color: rgb(189, 212, 239);
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 50px;
+    letter-spacing: 1.5px;
 }
+
 .span-dev{
     font-size: 30px;
     color: rgb(189, 212, 239);
 }
+
 span{
   color: rgb(0, 132, 255);
   font-size: 30px;
 }
-/* Typewriter effect 1 */
+
+
+
+
+/***************  links buttons containers **********************/
+
+.home-links-con{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+  .resume-btn{
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #ebebeb;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-left: 40px;
+    border:1px solid rgb(0, 132, 255);
+}
+
+a{
+ text-decoration: none;
+}
+.round-btns-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2px;
+    width: 150px;
+    margin-left: 20px;
+}
+.button-round{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border:1px solid rgb(0, 132, 255); 
+}
+
+.btn-icon{
+    font-size: 16px;
+    margin-top: 4px;
+    color: #969292;
+    color: rgb(229, 230, 230);
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+/* link button animation */
+.button-round {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-round:hover {
+    border-color: #00ffef;
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00aeff, 0 0 30px #00aeff, 0 0 40px #00a6ff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-btn {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-btn:hover {
+    border-color: #00ffef;
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00aeff, 0 0 30px #00aeff, 0 0 40px #00a6ff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+
+/* ---------- writing animation effect for Roles -------- */
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 98% 0);
+    }
+    
+    25% {
+        clip-path: inset(0 98% 0 0);
+    }
+    50% {
+        clip-path: inset(98% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 98%);
+    }
+  }
+  
+  .bg::before {
+    background: rgba(255, 215, 0, .5);
+  }
+
+
+
 @keyframes typing {
   0.0000%, 27.3488% { content: ""; }
   1.1395%, 26.2093% { content: "F"; }
@@ -128,591 +260,338 @@ span{
     animation: sequencePopup 12s linear infinite;
   }
 }
+/*  ------- type writer end ------ */
 
 
+ /* ------- starting media querie from here ------- */
+  
 
-
-/*************************************/
-.home-links-con{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-  .resume-btn{
-    height: 50px;
-    width: 140px;
-    font-size: 15px;
-    border-radius: 30px;
-    color: #ebebeb;
-    background-color: transparent;
-    padding-top: 15px;
-    padding-left: 40px;
-    border:1px solid rgb(0, 132, 255);
-  }
-  a{
-    text-decoration: none;
-  }
-.round-btns-con{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2px;
-    width: 150px;
-    margin-left: 20px;
-}
-
-  @media  screen and (max-width: 600px) {
-    .name-heaing-btn{
-      font-size: 1em;
+  
+  
+@media screen and (max-width:767px){
+    .hero-bg-con{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content-section{
+        height: 60%;
+        width: 100%;
+    }
+    .hero-img-section{
+        height: 40%;
+        width: 100%;
+    }
+    .hero-img{
+        height: 200px;
     }
   }
-  .button-round{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    border:1px solid rgb(0, 132, 255);
-   
-  }
-  .btn-icon{
-    font-size: 16px;
-    margin-top: 4px;
-    color: #969292;
-    color: rgb(229, 230, 230);
-    margin-top: 11px;
-    margin-left: 11px;
-  }
-  
-  /*----------------------------*/
-
-  
-  .button-round {
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button-round:hover {
-    border-color: #00ffef;
-    box-shadow: 0 0 10px #00bfff, 0 0 20px #00aeff, 0 0 30px #00aeff, 0 0 40px #00a6ff;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .resume-btn {
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .resume-btn:hover {
-    border-color: #00ffef;
-    box-shadow: 0 0 10px #00bfff, 0 0 20px #00aeff, 0 0 30px #00aeff, 0 0 40px #00a6ff;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  
-  /**************/
-  .hero-bg-con{
-      width: 100vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding-left: 6%;
-      padding-right: 6%;
-  }
-  
-  .hero-hea{
-      font-size: 35px;
-      margin-bottom: 10px;
-       line-height: 60px;
-  }
-  .span{
-    position: relative;
-    display: inline-block;
-    color: transparent;
-    font-size: 20px;
-    -webkit-text-stroke: .07rem rgb(0, 157, 255);
-    animation: display-text 16s linear infinite;
-    animation-delay: calc(-6s * var(--i));
-  }
-
-@keyframes display-text{
-  25%,
-  100%{
-    display: none;
-  }
-}
-  .span::before{
-    content: attr(data-text);
-    position: absolute;
-    color: #4dacff;
-    width: 0;
-    border-right: .2rem solid rgb(0, 132, 255);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: fill-text 6s linear infinite;
-  }
-
-  @keyframes fill-text {
-    10%,
-    100%{
-      width: 0;
+  @media screen and (min-width:576px) and (max-width:767px){
+    .hero-bg-con{
+        flex-direction: column;
+        align-items: center;
     }
-
-    70%,
-    90%{
-      width: 100%;
+    .hero-content-section{
+        padding: 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 16vh;
     }
-  }
-  
-  .name-hea{
-      font-size: 50px;
-      color: #fbfcfc;
-  }
-  
-  
-  .hero-p{
-      font-size:16px;
-      line-height: 30px;
-      color: #e6e5e5;
-      width: 70%;
-      letter-spacing: 2px;
-  }
+    .hero-img-section{
+        width: 100%;
+        margin-top: 0px;   
+    }
+    .name-span{
+        font-size: 40px;
 
-
-  .hero-content-section{
-      width:50%;
-      height: 100%;
-      display: flex;
-      flex-direction:column;
-      justify-content: center;
-  }
-
-  
-  .hero-img-section{
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-
-
-  .hero-img-con{
-    width:60%;
-    height: 65%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    background-color: #e6e5e5;
-  }
-
+    }
+    .h1{
+        text-align: center;
+    }
+    .hero-p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+        width: 100%;
+    } 
+    .hero-img-con{
+        height: 80%;
+        width: 60%;
+    } 
+    .home-links-con{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-icon{
+        margin-left: 4px;
+    }
+    .resume-btn{
+        padding-left: 0px;
+    }
  
-.name-span{
-    font-size: 46px;
-    color: #fffffff0;
+
 }
-  .hero-img{
-      border-radius: 50%;
-      height: 400px;
-      width: 400px; 
-  }
-  .tec-round-con{
-      padding: 6px;  
-      display: flex;
-      flex-direction:column ;
-      align-items: center;
-      justify-content: center;
-      align-self: flex-end;
-      margin-right: 20px;
-      border: 1px solid rgb(230, 228, 228);
-      border-radius: 20px;
-  }
+
+@media screen and (min-width:401px) and (max-width:576px){
+    .hero-content-section{
+        padding: 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10vh;
+    }
+    .name-span{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .span-dev{
+        font-size: 25px;
+    }
+    .hero-p{
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        text-align: center;
+        width: 100%;
+      }
   
-  .technology-img{
-      height: 50px;
-      width: 50px;
+
+    .hero-img-con{
+        width: 60%;
+        height: 80%;
+        padding: 0px;
+      }
+
+      .hero-img{
+        height: 190px;
+        width: 200px;
+    }
+      .btn-icon{
+        margin-left: 4px;
+    }
+    .resume-btn{
+        padding-left: 0px;
+    }
+    .hero-img-con{
+        width: 50%;
+        height: 90%;
+    }
+  
   }
-  .technology-img:hover{
-      height: 60px;
-      width: 60px;
-  }
-  .tech-logoes-con{
-      display: flex;
-      margin-top: 20px;
-     width: 100%;
-      padding-left: 25%;
+
+  @media screen and (min-width:301px) and (max-width:576px){
+    .hero-bg-con{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content-section{
+        margin-top: 5vh;
+    }
+    .hero-img-section{
+        height: 50%;
+        width: 100%;
+        margin-top: 0px;   
+    }
+    .name-span{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .span-dev{
+        font-size: 25px;
+    }
+    .hero-p{
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+    }  
+      
+    .hero-img-con{
+        width: 100%;
+        height: 80%;
+    }
+    .hero-img{
+        height: 190px;
+        width: 200px;
+    }
+    .btn-icon{
+        margin-left: 5px;
+    }
+    .resume-btn{
+       height: 40px;
+       padding-top: 14px;
+       width: 80px;
+       font-size: 10px;
+       border-radius: 15px;
+       padding-left:10px;
+
+    }
+    .home-links-con{
+        margin-left: 18%;
+    }
+    .hero-img-con{
+        width: 70%;
+        height: 80%;
+    }
+
+}
+@media screen and (min-width:201px) and (max-width:300px){  
+    .hero-content-section{
+        margin-top: 20%;
+    }
+    .name-span{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .span-dev{
+        font-size: 25px;
+    }
+    .hero-p{
+        font-size: 13px;
+        line-height: 23px;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+    }  
+      
+    .hero-img-con{
+        width: 100%;
+        height: 50%;
+    }
+    .hero-img{
+        height: 190px;
+        width: 150px;
+    }
+    .btn-icon{
+        margin-left: 12px;
+    }
+    .resume-btn{
+       height: 40px;
+       padding-top: 14px;
+       width: 80px;
+       font-size: 10px;
+       border-radius: 15px;
+       padding-left:23px;
+
+    }
+    .home-links-con{
+        margin-left: 18%;
+    }
+    .hero-img-con{
+        width: 70%;
+        height: 80%;
+    }
+
+   
+   
   
   }
   
   @media screen and (max-width:200px){
      
-      .hero-hea{
-          font-size:15px;
-          line-height: 20px;
-  
-      }
-      .hero-content-section{
-      padding-top: 10%;
-      }
-      .name-hea{
-          font-size: 26px;
-      }
-      .hero-p{
-          font-size: 9px;
-          line-height: 14px;
-          margin-bottom: 0px;
-  
-      }
-      .hero-img-con{
-          width: 90%;
-          height: 80%;
-      }
-       .hero-img{
-          width: 70%;
-          height: 100%;
-          margin-left: 0px;
-       }
-      .tec-round-con{
-          padding: 1px;
-          height: 25px;
-          width: 25px;
-          border-radius: 5px;
-      }
-      .technology-img{
-          height: 80%;
-          width: 80%;
-      }
-      .tech-logoes-con{
-          margin-top: 1%;
-      }
-      .glowing-btn{
-        font-size: 10px;
-        font-weight: 100;
-        letter-spacing: 7px;
-        padding: 5px;
-    }}
-  @media screen and (min-width:201px) and (max-width:300px){  
-      .hero-content-section{
-          margin-top: 20%;
-      }
-      .hero-hea{
-          font-size: 18px;
-          line-height: 25px;
-          margin-top: 10%;
-          margin-right: 4px;
-          margin-left: 4px;
-      }
-      .name-hea{
-          font-size: 42px;
-          line-height: 48px;
-      }
-      .hero-p{
-          font-size: 14px;
-          line-height: 18px;
-          margin-bottom: 0px;
-          margin-top: 0px;
-      }
-      .hero-img-con{
-          width: 100%;
-          height: 80%;
-      }
-       .hero-img{
-          width: 73%;
-          height: 100%;
-          margin-left: 0px;
-       }
-      .tec-round-con{
-          padding: 1px;
-          height: 37px;
-          width: 37px;
-          border-radius: 9px;
-      }
-      .technology-img{
-          height: 80%;
-          width: 80%;
-      }
-      .tech-logoes-con{
-          margin-top: 1%;
-      }
-      .glowing-btn{
-          font-size: 10px;
-          font-weight: 100;
-          letter-spacing: 7px;
-          padding: 10px;
-      }
-  
-  }
-  
-  @media screen and (min-width:301px) and (max-width:400px){
-      .hero-content-section{
-          margin-top: 0px;
-      }
-      .hero-hea{
-          font-size: 20px;
-          line-height: 26px;
-          margin-top: 35%;
-      }
-      .name-hea{
-          font-size: 38px;
-          line-height: 45px;
-      }
-      .hero-p{
-          font-size: 14px;
-          line-height: 23px;
-          margin-top: 0px;
-      }
-      .hero-bg-con{
-          flex-direction: column;
-          align-items: center;
-      }
-  
+    .hero-content-section{
+        padding-top: 10%;
+    }
+    .hero-hea{
+        font-size:15px;
+        line-height: 20px;
+    }
      
-      .hero-img-section{
-          height: 50%;
-          width: 100%;
-          margin-top: 0px;   
+    .name-hea{
+        font-size: 26px;
+    }
+
+    .hero-p{
+        font-size: 9px;
+        line-height: 14px;
+        margin-bottom: 0px;
       }
-      
-      .hero-img-con{
-          width: 100%;
-          height: 80%;
-      }
-       .hero-img{
-          width: 73%;
-          height: 100%;
-          margin-left: 0px;
-       }
-      .tec-round-con{
-          padding: 1px;
-          height: 43px;
-          width: 43px;
-          border-radius: 9px;
-      }
-      .technology-img{
-          height: 80%;
-          width: 80%;
-      }
-      .tech-logoes-con{
-          margin-top: 2%;
-      }
-     
-      .glowing-btn{
-        margin-top: 0px;
-      }
-  }
-  @media screen and (min-width:401px) and (max-width:575px){
-      .hero-hea{
-          font-size: 23px;
-          line-height: 30px;
-          margin-top:9%;
-      }
-      .hero-content-section{
-        padding: 20px;
-      }
-      .name-hea{
-         font-size: 44px;
-         text-align: center;
-         margin-right: 20px;
-         margin-left: 20px;
-      }
-      .hero-p{
-          font-size: 19px;
-          line-height: 23px;
-          margin-bottom: 0px;
-          margin-top: 5px;
-          text-align: center;
-      }
+    .hero-img-con{
+        width: 90%;
+        height: 80%;
+    }
+
+
+}
   
-      .hero-content-section{
-          padding: 0px;
-          width: 90%;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          padding-top: 0px;
-      }
-      .hero-img-con{
-          width: 100%;
-          height: 80%;
-          padding: 0px;
-      }
-      .hero-img{
-        height: 100%;
-        margin-top: 0px;
-      }
-      .hero-img{
-          width:70%;
-          height: 39vh;
-      }
-      .tec-round-con{
-          height: 50px;
-          width: 50px;
-          border-radius: 14px;
-      }
-      .hero-img-con{
-          padding-left: 3%;
-      }
-      .tech-logoes-con{
-          margin-top: 4px;
-          margin-left: ;
-          width: 100%;
-      }
-  
-  }
-  
-  @media screen and (max-width:767px){
-      .hero-bg-con{
-          flex-direction: column;
-          align-items: center;
-          padding: 1%;
-      }
-      .hero-content-section{
-          height: 50%;
-          width: 100%;
-      }
-      .hero-img-section{
-          height: 50%;
-          width: 100%;
-      }
-      .glowing-btn{
-          font-size: 15px;
-          align-self: center;
-      }
-  }
-  @media screen and (min-width:576px) and (max-width:767px){
-      .hero-hea{
-          font-size: 25px;
-          line-height: 35px;
-          margin-top: 18%;
-      }
-      .name-hea{
-          font-size: 50px;
-          line-height: 66px;
-      }
-      .hero-p{
-          font-size: 19px;
-          line-height: 30px;
-          margin-bottom: 0px;
-      }
-      .hero-bg-con{
-          flex-direction: column;
-          align-items: center;
-      }
-      .hero-content-section{
-          padding: 0px;
-          width: 90%;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          padding-top: 0px;
-      }
-      .hero-img-section{
-          width: 100%;
-          margin-top: 0px;      
-      }
-      .hero-img-con{
-          height: 80%;
-          width: 60%;
-      }
-  
-      .technology-img{
-          height:90%;
-          width: 90%;
-      }
-      .tec-round-con{
-          border-radius: 10px;
-          height: 56px;
-          width: 55px;
-          padding: 0px;
-      }
-      .tech-logoes-con{
-          margin-top: 5px;
-      }
-  
-  
-  }
-  @media screen and (min-width:768px) and (max-width:991px){
-      .hero-hea{
-          font-size: 30px;
-          line-height:50px;
-      }
-      .name-hea{
-          font-size: 69px;
-      }
-      .hero-p{
-          line-height: 27px;
-          margin-bottom: 0px;
-          font-family:bree serif;
-          font-size: 20px;
-      }
-     
-      .hero-img{
-          width:35vw;
-          height: 55vh;
-      }
-      .technology-img{
-          height: 60px;
-          width: 65px;
-      }
-      .tec-round-con{
-          border-radius: 10px;
-      }
-      .tech-logoes-con{
-          margin-top: 12px;
-      }
-      .hero-bg-con{
-          padding: 5%;
-      }
-      .hero-img-section{
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .hero-bg-con{
+        padding: 5%;
+    }
+    .hero-img-section{
         padding: 0px;
-      }
-      .hero-img-con{
+    }
+      
+    .hero-p{
+        line-height: 20px;
+        margin-bottom: 0px;
+        font-size:13px;
+        width: 90%;
+    }
+     
+    .hero-img-con{
         width: 95%;
-      }
-      .hero-img{
-        width: 76%;
-        height: 100%;
-      }
-  
-  
+    }
+
+    .hero-img{
+      
+    }
+
+    .name-span{
+        font-size: 35px;
+    }
+    span{
+        font-size: 25px;
+    }
+    .h1{
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .span-dev{
+        font-size: 30px;
+    }
+   
+   
   }
-  @media screen and (min-width:992px) and (max-width:1200px){
-     
-      .hero-hea{
-          font-size: 30px;
-          line-height:50px;
-      }
-      .name-hea{
-          font-size: 69px;
-      }
-      .hero-p{
-          line-height: 27px;
-          margin-bottom: 0px;
-          font-family:bree serif;
-          font-size: 20px;
-      }
-     
-      .hero-img{
-          width:35vw;
-          height: 55vh;
-      }
-      .technology-img{
-          height: 60px;
-          width: 65px;
-      }
-      .tec-round-con{
-          border-radius: 10px;
-      }
-      .tech-logoes-con{
-          margin-top: 12px;
-      }
-      .hero-bg-con{
-          padding: 5%;
-      }
-  
-  
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .hero-bg-con{
+        padding: 5%;
+    }
+
+    .hero-img-con{
+        width: 90%;
+    }
+
+    .hero-p{
+        line-height: 26px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
   }
-  
+

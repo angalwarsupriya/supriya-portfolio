@@ -21,32 +21,27 @@
     height: 100%;
     width: 100%;
 }
-.list-item-sm{
-    color: hsl(0, 3%, 83%);
-    font-size: 18px;
-    margin-left: 0px;
-    display: block;
-    width: 100%;
-    padding-bottom: 15px;
-}
+
 .menu-item-sm{
     margin-left: 0px;
     color: aliceblue;
     text-decoration: none;
 }
+
+.menu-item{
+    margin-bottom: 30px;
+}
 .mobile-nav-con.active{
     display: none;
 }
 
-
-
-.mobile-nav-ul{
-    height: 100vh;
-    width:50vw;
-    background-color: aqua;
-}
 @media screen and (min-width:767px){
     .mobile-nav-con{
+        display: none;
+    }  
+}
+@media screen and (max-width:767px){
+    .nav-con{
         display: none;
     }  
 }

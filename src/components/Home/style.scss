@@ -2,6 +2,8 @@
     display: grid;
     place-content: center;
     color: white;
+    height: 100%;
+    width: 100%;
     text-shadow: 0 1px 0 #000;
     
     --border-angle: 0turn; // For animation.

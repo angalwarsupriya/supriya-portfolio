@@ -9,15 +9,24 @@ html, body {
   box-sizing:border-box;
 }
 
-.container {
+.bg-con{
   width: 100vw;
-  position: relative;
-  z-index: 2;
 }
+/* animation con */
+
 .animation-con{
   height: 100vh;
   width: 100vw;
   position: fixed;
+}
+
+/* top content container */
+
+.container {
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  
 }
 
 

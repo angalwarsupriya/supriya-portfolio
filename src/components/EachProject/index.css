@@ -46,8 +46,6 @@
     font-size: 20px;
 
 }
-
-
 .tecnolgies-con{
     display: flex;
 }
@@ -56,6 +54,7 @@
     margin-right: 20px;
     color: rgb(43, 183, 226);
 }
+
 .link-icon-round-con{
     height: 40px;
     width: 40px;
@@ -65,12 +64,78 @@
     display: flex;
     justify-content: center;
     align-items: self-start;
-    padding-left: 2px;
-    padding-bottom: 5px;
-
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .icons-row{
     display: flex;
     margin-top: 30px;
+}
+
+
+@media screen and (max-width:768px){
+    .projects-con{
+        flex-direction: column;
+        height: 110vh;
+    }
+    .project-img-section{
+        width: 90%;
+        height: 50%;
+        order: 1;
+    }
+
+    .project-details-section{
+        width: 100%;
+        height: 40%;
+        order: 2;
+    }
+    .h-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .project-p{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .project-p{
+        width: 100%;
+        text-align: center;
+    }
+    .project-number-hea{
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .project-name{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:450px){
+  .project-name{
+    font-size: 25px;
+  }
+  .project-number-hea{
+    font-size: 35px;
+  }
+  .project-p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:300px){
+    .project-name{
+        font-size: 25px;
+      }
+      .project-number-hea{
+        font-size: 30px;
+      }
+      .project-p{
+        font-size: 10px;
+        line-height: 20px;
+      }
 }

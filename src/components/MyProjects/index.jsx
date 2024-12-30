@@ -1,13 +1,13 @@
 
 import './index.css'
+import { useState } from 'react';
+
+import EachProject from '../EachProject';
 
 import { PiGreaterThan } from "react-icons/pi";
 import { PiLessThan } from "react-icons/pi";
-import EachProject from '../EachProject';
-import { useState } from 'react';
 
-
-
+// projects data //
 const projectsData = [
     {
     id:1,
@@ -19,7 +19,7 @@ const projectsData = [
     {
     id:2,
     projectTitle:'Emoji Game',
-    projectDescription:"This is an engaging and interactive web-based game designed to test users memory and concentration skills. Players are presented with a grid of cards, each containing an emoji. The objective is to match pairs of identical emojis by flipping the cards. The game tracks the player's score, updating the top score with each successful match. The game features a responsive design, ensuring a seamless experience across various devices.",
+    projectDescription:"This is an engaging and interactive web-based game designed to test users memory and concentration skills. Players are presented with a grid of cards, each containing an emoji. The objective is to match pairs of identical emojis by flipping the cards. The game tracks the player's score.",
     projectImg:"images/Frame 1 (7).png",
     link:'https://craztGame.ccbp.tech'
     },
@@ -27,14 +27,14 @@ const projectsData = [
     {
     id:3,
     projectTitle:'Nxt trends',
-    projectDescription:'This is a responsive e-commerce application inspired by platforms like Amazon. Users can browse, filter, and search for products. Secure user authentication ensures personalized experiences. Users can add items to a shopping cart and proceed through a seamless checkout process, The app ensures a responsive design for a smooth user experience across all devices. that allows users to search, and purchase products. It features user authentication, product filtering, and a dynamic shopping cart with real-time updates.',
+    projectDescription:'This is a responsive e-commerce application.',
     projectImg:"images/Frame 1 (4).png",
     link:'https://NxtBuy.ccbp.tech'
     },
     {
     id:4,
     projectTitle:'Nxt Watch',
-    projectDescription:'This is a React-based application similar to YouTube. Users can log in and watch various types of videos, including trending videos, gaming videos, and saved videos1. The project involves implementing features like user authentication, state management, context, page navigation, and responsive design using media queries and flexbox. The app also includes functionality to search for videos and view specific video details1.',
+    projectDescription:'This is a React-based application similar to YouTube. Users can log in and watch various types of videos, including trending videos, gaming videos, and saved videos.',
     projectImg:"images/Frame 1 (1).png",
     link:'https://nxt-watch-video-player-box.vercel.app/'
     },
@@ -61,42 +61,53 @@ const projectsData = [
  ]
 
 
+ // starts functional component from here //
 function MyProjects() {
-
+  
+  // manage project id, details for render //
   const [activeProjectId, changeActiveProjectId] = useState(0)
 
  
-
-  const moveToPrev = ()=>{
-    changeActiveProjectId((preve)=> preve-1)
+  // moving to previous project //
+  const moveToPrev = () => {
+    if (activeProjectId > 1) {
+      changeActiveProjectId((preve) => preve - 1)
+    }
   }
   
-
-  const moveToNext = ()=>{
-    changeActiveProjectId((preve)=> preve+1)
+  // moving to next project */
+  const moveToNext = () => {
+    if (activeProjectId < 6) {
+        changeActiveProjectId((preve) => preve + 1)
+    }
   }
   
+  // active project  details to send as prop //
   const projectDetails = projectsData[activeProjectId]
-  console.log(projectDetails)
   
+  // returning ui //
   return (
-    <section id='' className='my-projects-section-bg-con'>
-        <h2 className='my-projects-hea'>My Projects</h2>
+    <section id='my-projects' className='my-projects-section-bg-con'>
 
+      <h2 className='my-projects-hea'>My Projects</h2>
+    
+      <EachProject projectDetails={projectDetails} />
+      
+      <div className='pagination-con'>
+        <div className='paginations-btn-con'>
+          
+          <button className='less-btn' onClick={moveToPrev}>
+            <PiLessThan className='icon'/>
+          </button>
+               
+          <button className='greate-btn'>
+            <PiGreaterThan className='icon'  onClick={moveToNext}/>
+          </button>
 
-         <EachProject projectDetails={projectDetails}/>
-
-
-        <div className='pagination-con'>
-            <div className='paginations-btn-con'>
-                <button className='less-btn' onClick={moveToPrev}>
-                    <PiLessThan className='icon'/>
-                </button>
-                <button className='greate-btn'>
-                    <PiGreaterThan className='icon'  onClick={moveToNext}/>
-                </button>
-            </div>
         </div>
+      </div>
+        
+    
     </section>
   )
 }
