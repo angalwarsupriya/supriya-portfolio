@@ -110,16 +110,17 @@
     height: auto;
 }
 
-.nav-container ul{
+.nav-container{
     list-style-type: none;
     display: flex;
     align-items: center;
     gap:0.5rem;
 
 }
-.nav-container li{
+.menu-item{
     margin: 0 1.5rem;
 }
+
 .menu-item{
     color: #fff;
     font-size: 1.05rem;
@@ -130,9 +131,9 @@
 }
 .logo{
     font-size: 30px;
-    font-family: Papyrus, fantasy;
-   
+    font-family: Papyrus, fantasy; 
 }
+
 .menu-item::before{
     content: " ";
     width:2rem ;
@@ -151,6 +152,7 @@
     transform: translateX(0);
     opacity: 1;
 }
+
 .glow-on-hover{
     font-size: 0.9rem;
     font-weight: 500;

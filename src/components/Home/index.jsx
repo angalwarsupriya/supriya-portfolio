@@ -1,41 +1,72 @@
 import './index.css'
-function Home() {
+import './style.scss'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { CiTwitter } from "react-icons/ci";
+
+
+function Home() {
+  AOS.init()
   const onclickResume = ()=>{
+    console.log('rr')
     window.open('https://docs.google.com/document/d/1shhpZFzQqZZIM6SFqspIOOw2Ys4i_OIPzyBmVqlJkP8/edit?tab=t.0','_blank')
   }
   return (
+
     <section id='hero-section' className='hero-bg-con'>
-       <div className='hero-content-section'>
-        <h1 className='hero-hea'>  <span className='span'>I'm Supriya Angalwar</span>  Frontend Devloper,  Designer Intrested in Bakend also</h1>
-       
+
+      <div className='hero-content-section'>
+        
+        <h1 aria-label="Hi! I'm a developer" className='h1'>
+          Hi! I'm <span className='name-span'>Supriya,</span>&nbsp; <span className="typewriter"></span>
+          <br/>
+          <span className='span-dev'>Developer </span>
+        </h1>
+
+
         <p className='hero-p'>Passionate Frontend Developer! Transforming Idias Into Seamless and Vissuallys stunning WEb solutions.</p>
-        <button className='glowing-btn' onClick={onclickResume}><span className='glowing-txt'>RE<span className='faulty-letter'>SU</span>ME</span></button>
-    
-      </div>
-      <div className='hero-img-section'>
-        <div className='hero-img-con'>
-          <div className='tec-round-con'>
-            <img className='technology-img' alt='react' src='https://res.cloudinary.com/dfb0groak/image/upload/v1732532409/react_ubvkrf.svg'/>
+        
+        <div className='home-links-con'>
+            <a className='resume-btn' href='https://docs.google.com/document/d/1shhpZFzQqZZIM6SFqspIOOw2Ys4i_OIPzyBmVqlJkP8/edit?tab=t.0' target='_blank'>Resume</a>
+
+          <div className='round-btns-con'> 
+     
+               <a className='button-round' href='https://github.com/angalwarsupriya' target='_blank' >
+              <FaGithub className='btn-icon'/>
+              </a>
+          
+         
+              <a className='button-round' href='https://www.linkedin.com/in/supriyaangalwar/' target='_blank'>
+              <CiLinkedin className='btn-icon'/>
+              </a>
+        
+            
+              <a className='button-round' href='https://x.com/AngalwarSupriya' target='_blank'>
+              <CiTwitter className='btn-icon'/>
+              </a>
+
           </div>
-          <img className='hero-img' alt='profile-img' src='./images/sweety (3).jpg'/>
+          </div>
+        </div>
+
+
+      <div className='hero-img-section'>
+
+        <div className='div box' >      
+            <img className='hero-img' alt='profile-img' src='./images/sweety123.png'/>      
         </div>
         
-        <div className='tech-logoes-con'>
-          <div className='tec-round-con'>
-            <img className='technology-img' alt='javascript' src='images/icons8-javascript-48.png'/>
-          </div>
-          <div className='tec-round-con'>
-            <img className='technology-img' alt='html' src='images/icons8-html-5-48.png'/>
-          </div>
-          <div className='tec-round-con'>
-            <img className='technology-img' alt='css' src='images/icons8-css3-48.png'/>
-          </div>
-        </div>
+
       </div>
+
+
     </section>
   )
 }
 
 export default Home
-

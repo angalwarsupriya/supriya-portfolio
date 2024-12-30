@@ -2,8 +2,13 @@ import './index.css'
 
 import SkillCard from '../SkillCard'
 
-
+import styled, { keyframes } from 'styled-components';
 import { useState } from 'react'
+
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const skillsData = [
   {
@@ -49,16 +54,32 @@ const skillsData = [
 
 
 function Skills() {
+    AOS.init();
 
     const [activeSkillObject, changeActiveSkillObject] = useState(skillsData[0])
     const changeActiveSkillFun = (skillDe)=> {
         changeActiveSkillObject(skillDe)
     }
+      
+
+    
+    const ProgressAnimation = (percentage) => keyframes`
+  0% { width: 0; }
+  100% { width: ${percentage}; }
+`;
+
+const ProgressBar = styled.div`
+  height: 8px;
+  background-color: rgb(55, 196, 196);
+  border-radius: 3.4px;
+  animation: ${({ percentage }) => ProgressAnimation(percentage)} 1s ease-in-out forwards;
+`;
+
 
   return (
     <section id='skills-section' className='skills-section-con'>
        <h2 className='tech-pro-hea'>Technical Proficiency</h2>
-       <div className='skills-showcase-con'>
+       <div className='skills-showcase-con' data-aos='zoom-out'>
          <div className='skills-details-box-con'>
             <ul className='boxes-container'>
                 {skillsData.map((skillDetail)=>(
@@ -66,7 +87,7 @@ function Skills() {
                 ))}
             </ul> 
          </div>
-         <div className='skills-details-percent-con'>
+         <div className='skills-details-percent-con' data-aos='zoom-out'>
             <h3 className='activeSkillHea'>{activeSkillObject.title}</h3>
             <hr/>
             <div className='progress-cells-con-container'>
@@ -78,7 +99,7 @@ function Skills() {
                         </div>
 
                         <div className='progress-bar-bg'>
-                           <div className='progress-bar' style={{width:eachSkill.percentage}}></div>
+                           <ProgressBar percentage={eachSkill.percentage} />                     
                         </div>
                     </div>
 ))}

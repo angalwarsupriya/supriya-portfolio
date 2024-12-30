@@ -8,6 +8,7 @@
     border: none;
     border-radius: 5px;
     overflow: hidden;
+
   }
   
   .icon-plane {
@@ -58,6 +59,7 @@
     width: 100%;
     padding-left: 6%;
     padding-right: 6%;
+    background-color: #1d212f;
 }
 .contact-me-h{
     font-size: 25px;
@@ -66,72 +68,67 @@
     height: 90%;
     width: 100%;
     display: flex;
+
 }
 .contact-details-con{
-    height: 100%;
+    height: 70%;
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
+
+
 .form-details-con{
     height: 100%;
     width: 60%;
 }
-.row{
-    display: flex;
-    align-items: center;
-}
-.contact-icons{
-    font-size: 35px;
-}
-.contact-value{
-    font-size: 17px;
-    margin-left: 10px;
-    color: aliceblue;
-}
+
+
 .form-con{
     height: 100%;
     width: 100%;
 }
 .nameinput{
     height: 45px;
-    width: 93%;
+    width: 92%;
     border-radius: 10px;
     background-color: rgb(68, 64, 64);
     border: 1px solid rgb(210, 210, 210);
-    font-size: 19px;
+    font-size: 14px;
     color: rgb(160, 165, 170);
     font-weight: normal;
-    padding: 4px;
+    padding-left:10px;
     display: inline;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .email-input{
     height: 45px;
-    width: 95%;
+    width: 96%;
     border-radius: 10px;
     background-color: rgb(68, 64, 64);
     border: 1px solid rgb(210, 210, 210);
-    font-size: 19px;
+    font-size: 13px;
     color: rgb(160, 165, 170);
     font-weight: normal;
-    padding: 4px;
+    padding-left: 10px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 
 }
 textarea{
     border-radius: 10px;
     background-color: rgb(68, 64, 64);
     border: 1px solid rgb(210, 210, 210);
-    font-size: 17px;
+    font-size: 14px;
     color: rgb(160, 165, 170);
     font-weight: normal;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
+    width: 96%;
 }
 .input-con{
     margin-bottom: 10px;
@@ -145,12 +142,14 @@ textarea{
     width: 50%;
 }
 label{
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 300;
    
 }
 .names-input-row{
     display: flex;
     width: 100%;
+    color: rgb(220, 220, 220);
 }
 .send-btn{
     padding: 10px;
@@ -488,3 +487,67 @@ color: rgb(238, 6, 6);
         margin-bottom: 0px;
     }
  }
+
+.footer-img-con{
+    height: 100%;
+    width: 100%;
+}
+ .footer-img{
+    height: 130%;
+    width: 96%;
+ }
+
+ /*
+ .row{
+    display: flex;
+    align-items: center;
+}
+.contact-icons{
+    font-size: 35px;
+}
+.contact-value{
+    font-size: 17px;
+    margin-left: 10px;
+    color: aliceblue;
+}*/
+/*************************
+
+body {
+  background: #182028;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container with animated image */
+.footer-img-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    animation: move-up-down 4s infinite;
+  }
+  
+ 
+  
+  @keyframes move-up-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px); /* Adjust this value based on how far down you want the image to move */
+    }
+  }

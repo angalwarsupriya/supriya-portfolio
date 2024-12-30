@@ -13,26 +13,17 @@ function Navbar() {
     const changeMenuStatusFun  =()=>{
         changeMenuStatus((preve)=> !preve)
     }
-    
-   
+      
     return (
     <div className='nav-wrapper'>
        <div className='nav-container'>
            <h4 className='logo glow'>Portfolio</h4>
-            <ul className='ul-con'>
-                <li className='li'>
-                    <a href='#hero-section' className='menu-item' >Home</a>
-                </li>
-                <li className='li'>
-                    <a href='#skills-section' className='menu-item' onClick={() => changeActiveLinkStatus(status.skills)}>Skills</a>
-                </li>
-                <li className='li'>
-                    <a href='#my-projects' className='menu-item'  onClick={() => changeActiveLinkStatus(status.projects)}>Projects</a>
-                </li>
-                <li className='li'>
-                    <a href='#contact-section' className='menu-item'  onClick={() => changeActiveLinkStatus(status.contact)}>Contact Me</a>
-                </li>
-            </ul>
+           <nav className='ul-con'>
+                <a href='#hero-section' className='menu-item' >Home</a>
+                <a href='#skills-section' className='menu-item' onClick={() => changeActiveLinkStatus(status.skills)}>Skills</a>
+                <a href='#my-projects' className='menu-item'  onClick={() => changeActiveLinkStatus(status.projects)}>Projects</a>
+                <a href='#contact-section' className='menu-item'  onClick={() => changeActiveLinkStatus(status.contact)}>Contact Me</a>  
+            </nav>
             
             <button className='glow-on-hover'>Hire Me</button>
              
@@ -41,8 +32,10 @@ function Navbar() {
             </button> :
             <button className='nav-menu-btn' onClick={changeMenuStatusFun}>
                 <LuMenu style={{fontSize:'20px'}}/>
-            </button>}       
+            </button>} 
+
             <MobileNav menuStatus={menuStatus}/>
+            
        </div>
     </div>
   )
