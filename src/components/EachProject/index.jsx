@@ -29,7 +29,7 @@ function EachProject(props) {
           <p className='project-p'>{projectDetails.projectDescription}</p>
 
           <div className='tecnolgies-con'>
-            <p className='tecnology-p'>React.Js, CSS, Boostrap</p>
+          <p className='tecnology-p'>{projectDetails.techUsed}</p>
           </div>
         
           <hr style={{width:'100%'}}/>
@@ -42,7 +42,7 @@ function EachProject(props) {
             </div>
 
             <div className='link-icon-round-con'>
-              <a className='link-a' href={projectDetails.link} target='_blank'>
+              <a className='link-a' href={projectDetails.gitLink} target='_blank'>
                 <FaGithub className='link-icon'/>
               </a>
             </div>
